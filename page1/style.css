@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(150, 148, 153);
+    font-family: helvetica;
+}
+.content{
+   
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+}
+.left{
+    width: 50%; 
+    background-image: url(https://cdn.pixabay.com/photo/2023/05/30/08/06/planting-8027884_1280.jpg);
+    /* background-image: url(https://media.istockphoto.com/id/1181366400/photo/in-the-hands-of-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-on.jpg?s=1024x1024&w=is&k=20&c=7vTdlKUTmfYvaSlw4r1IdAb3AvXbZlE_L-hqpUVbXYA=); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.left>.topl{
+    margin: 2vw;
+   
+    border-bottom:  2px solid blue ;
+    border-left:  2px solid blue ;
+    border-top:  2px solid blue ;
+    width: 15%;
+    font-size: 5vh;
+    
+    
+    
+}
+.content .left .topl >span{
+    color: rgb(17, 17, 17);
+    padding-left: 60px;
+    font-size: 3vh;
+    
+    
+    
+    
+   
+}
+.bottoml{
+    display: flex;
+    gap: 3vh;
+    flex-direction: column;
+    margin: 10vh;
+    width: 80%;
+    color: rgb(248, 245, 245);
+
+}
+  
+
+.right{
+    width: 50%;
+    background:white;
+    padding: 4%;
+
+}
+.right h1{
+    font-size: 3vw;
+   
+    text-align: left;
+}
+
+.right p{
+    font-size: 2vh;
+    
+    text-align: left;
+}
+
+.right p>span{
+    font-size: 2vh;
+    color: blue;
+}
+.signupcontent{
+ display: flex;
+ font-size: 10px;
+ justify-content: space-evenly;
+
+ }
+ .signupcontent>h2{
+    border: 2px solid rgb(185, 185, 185);
+    padding: .8vh;
+ }
+.rightcontent{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+}
+.rightcontent>input{
+    padding: 1.5vh;
+    border: 2px solid rgb(201, 198, 198);
+
+}
+.rightcontent>h3{
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+}
+.rightcontent>button{
+    padding: 1vh;
+    background-color:blue;
+    color: white;
+    font-size: 1.5vw;
+    border: 2px solid transparent;
+   
+    
+}
+.signupcontent>.left_signup{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 10px;
+    border: 2px solid rgb(233,233,233);
+    
+}
+.signupcontent>.right_signup{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    padding: 10px;
+    border: 2px solid rgb(223, 223, 223);
+    
+}
+.left{
+    border: none;
+    border-top-left-radius: 5%;
+    border-top-right-radius: none;
+    border-bottom-left-radius: 5%;
+}
+.right{
+    border: none;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+@media screen and (max-width:600px) {
+    .content{
+        display: flex;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    .right{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+    }
+    .left>.topl{
+        margin: 2vw;
+       
+        border-bottom:  2px solid blue ;
+        border-left:  2px solid blue ;
+        border-top:  2px solid blue ;
+        width:27%;
+        font-size: 5vh;
+        
+        
+        
+    }
+    .bottoml{
+        display: flex;
+        gap: 9vh;
+        flex-direction: column;
+        margin: 10vh;
+        width: 80%;
+        color: rgb(253, 251, 251);
+        padding-right: 10%;
+    
+    }
+    .bottoml>p{
+        font-size: 25px;
+    
+    }
+
+
+}
